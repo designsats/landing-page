@@ -1,12 +1,68 @@
+@font-face {
+  font-family: Materialicons;
+  src: url('../fonts/MaterialIcons-Regular.woff2') format("woff2"), url('../fonts/MaterialIcons-Regular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-BoldItalic.woff2') format("woff2"), url('../fonts/Poppins-BoldItalic.woff') format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Medium.woff2') format("woff2"), url('../fonts/Poppins-Medium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Bold.woff2') format("woff2"), url('../fonts/Poppins-Bold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Italic.woff2') format("woff2"), url('../fonts/Poppins-Italic.woff') format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Thin.woff2') format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Light.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --white: white;
   --galoyblue: #3654ff;
-  --adopting-yellow: #eedb5f;
-  --fontgrey: grey;
+  --kenya-orange: #f7931a;
+  --bitcoinorange: #f68e1d;
+  --fontgrey: #a8a8a8;
   --black: black;
   --galoygrey: #1e1e1e;
   --white-2: white;
-  --bitcoinorange: #f68e1d;
 }
 
 body {
@@ -240,12 +296,12 @@ a:hover {
 }
 
 .menu-button:focus {
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
 }
 
 .menu-button.w--open {
   z-index: 1;
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
 }
 
 .hero-heading-left {
@@ -422,10 +478,10 @@ a:hover {
 }
 
 .footer-copyright {
-  color: var(--white);
+  color: var(--bitcoinorange);
   text-align: center;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -460,7 +516,7 @@ a:hover {
 }
 
 .section.tickets-section {
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
   color: var(--black);
   position: relative;
 }
@@ -483,9 +539,9 @@ a:hover {
 }
 
 .centered-subheading {
+  max-width: 530px;
   color: var(--white);
   text-align: center;
-  max-width: 530px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -598,7 +654,7 @@ a:hover {
 
 .button.book-now.book-now-fixed {
   z-index: 3;
-  color: var(--adopting-yellow);
+  color: var(--kenya-orange);
   text-shadow: 0 2px 5px #0003;
   position: fixed;
   bottom: 40px;
@@ -606,14 +662,14 @@ a:hover {
 }
 
 .button.button-primary {
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
   text-decoration: none;
   display: inline-block;
 }
 
 .button.button-primary:hover {
   background-color: var(--galoygrey);
-  color: var(--adopting-yellow);
+  color: var(--kenya-orange);
 }
 
 .hero-heading-right {
@@ -678,7 +734,7 @@ a:hover {
 }
 
 .hero-section.hero-section-yellow {
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
   height: auto;
   padding-bottom: 20px;
 }
@@ -819,7 +875,11 @@ a:hover {
 }
 
 .body {
-  background-color: #05051f;
+  background-image: url('../images/landing-bg.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .h3 {
@@ -832,7 +892,7 @@ a:hover {
 }
 
 .h3.heading-white.yellow-bg {
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
   color: var(--black);
   text-align: right;
   border-radius: 3px;
@@ -877,10 +937,10 @@ a:hover {
 
 .title-holder {
   grid-column-gap: 40px;
-  color: var(--adopting-yellow);
+  width: 200%;
+  color: var(--kenya-orange);
   justify-content: center;
   align-items: center;
-  width: 200%;
   display: flex;
   transform: rotate(-4deg);
 }
@@ -890,7 +950,7 @@ a:hover {
 }
 
 .title-heading {
-  color: var(--adopting-yellow);
+  color: var(--kenya-orange);
   white-space: nowrap;
   margin-top: 0;
   font-size: 101px;
@@ -909,15 +969,15 @@ a:hover {
 .button-circle {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
+  width: 50px;
+  height: 50px;
   color: var(--black);
   border-radius: 50%;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   place-items: center;
-  width: 50px;
-  height: 50px;
   transition: all .13s;
   display: grid;
   box-shadow: 0 2px 4px #0003;
@@ -1061,7 +1121,7 @@ a:hover {
 }
 
 .speaker-img-overlay {
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
   opacity: 0;
   transition: opacity .13s;
   position: absolute;
@@ -1222,7 +1282,7 @@ a:hover {
 .footer-social-item {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  background-color: var(--adopting-yellow);
+  background-color: var(--kenya-orange);
   border-radius: 50%;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
@@ -1249,6 +1309,11 @@ a:hover {
 
 .empty-space-60 {
   height: 60px;
+}
+
+.flash-icon {
+  filter: saturate(230%) hue-rotate(-42deg);
+  width: 40px;
 }
 
 .flash-icon.flash-icon-dark {
@@ -1463,13 +1528,14 @@ a:hover {
   height: 55px;
 }
 
-.tab-logo.tab-logo-zar {
-  height: 64px;
+.tab-logo.tab-logo-ke {
+  height: 57px;
 }
 
 .code-link {
   border-right: 1px solid #fff;
   border-left: 1px solid var(--white);
+  color: var(--white);
   padding: 8px 10px;
   display: inline-block;
 }
@@ -1521,12 +1587,13 @@ a:hover {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
 
 .ab-country-tab {
+  color: var(--fontgrey);
   text-align: center;
 }
 
@@ -1536,12 +1603,9 @@ a:hover {
 }
 
 .archive-text {
+  color: var(--kenya-orange);
   text-transform: uppercase;
   line-height: 1.6em;
-}
-
-.white {
-  color: var(--white);
 }
 
 .es-100 {
@@ -1656,7 +1720,7 @@ a:hover {
     height: 80px;
   }
 
-  .tab-logo.tab-logo-zar {
+  .tab-logo.tab-logo-ke {
     height: 90px;
   }
 
@@ -2028,7 +2092,7 @@ a:hover {
     height: 50px;
   }
 
-  .tab-logo.tab-logo-zar {
+  .tab-logo.tab-logo-ke {
     height: 59px;
   }
 }
@@ -2404,7 +2468,7 @@ a:hover {
     height: 50px;
   }
 
-  .tab-logo.tab-logo-zar {
+  .tab-logo.tab-logo-ke {
     height: 52px;
   }
 
@@ -2523,6 +2587,10 @@ a:hover {
     margin-bottom: 10px;
   }
 
+  .body {
+    background-position: 100%;
+  }
+
   .h3.heading-white {
     font-size: 24px;
   }
@@ -2619,7 +2687,7 @@ a:hover {
     height: 40px;
   }
 
-  .tab-logo.tab-logo-zar {
+  .tab-logo.tab-logo-ke {
     height: 50px;
   }
 
